@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-mocks.js"></script>
+        <script src="js/angTable.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    </head>
+    <body ng-app="MyApp">
+        <div ng-controller="DataCtrl">
+            <table class="table" style="size: " >
+                <thead>
+                    <tr>
+                        <th>Age</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody ng-repeat="member in members">
+                <td>{{member.age}}</td>
+                <td>{{member.name}}</td>
+                <td>{{member.email}}</td>
+                </tbody>
+            </table>
+        </div>
+        <a href='index.html'>Back</a>
+    </body>
+</html>
